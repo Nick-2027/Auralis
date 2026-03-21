@@ -1,3 +1,54 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    background-color: rgb(231, 229, 229);
+    border-radius: 10px;
+    display: flex;
+    min-width: 100%;
+    margin: 0;
+    padding: 10px 60px;
+}
+
+
+.main-container {
+    margin: 0 70px;
+    margin-top: 10px;
+}
+
+.custom-carousel {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.info{
+    margin-top: 15px;
+    color: rgb(14, 14, 145);
+}
+
+.description {
+    color: rgb(10, 10, 10);
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.card{
+    margin: 20px;
+    background-color: white;
 }
