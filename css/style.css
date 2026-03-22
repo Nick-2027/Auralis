@@ -77,58 +77,169 @@ body {
     justify-content: center;
 }
     
+
 .contenedor-app{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    position: relative;
+    display: inline-block;
+    
 }
  
 .contenedor-app img{
     width: 100%;
     max-width: 600px;
+    
 }
-
+ 
 .zona{
-    position:static;
+    position: absolute;
+    display: block;
+
 }
  
 .appstore{
-    bottom:275px;
+    bottom: 278px;
     left: 160%;
-    right: 40%;
+    right: 3%;
     width: 120px;
     height: 40px;
 }
  
 .playstore{
-    bottom: 276px;
-    right: 47%;
+    bottom: 278px;
+    right: 30%;
     left: 200%;
     width: 120px;
     height: 40px;
 }
+/* ────────── MEDIA QUERIES RESPONSIVE ────────── */
 
+/* TABLETS Y CELULAR MEDIANO */
 @media (max-width: 768px){
 
+    /* Ajusta márgenes generales */
     .main-container{
         margin: 10px;
     }
 
+    /* Carousel más pequeño y adaptado */
     .carousel-item img{
+        width: 100%;
         height: 250px;
+        object-fit: cover;
     }
 
+    /* Texto más pequeño */
     .description{
         font-size: 1rem;
     }
 
+    /* Cards ocupen todo el ancho y se centren */
     .col .card{
         width: 100%;
-        margin: 0;
+        margin: 5px 0;
     }
 
+    .row {
+        justify-content: center;
+    }
+
+    /* Imagen destacada adaptada */
     .imagen-desc img{
-        width: 100%;
+        width: 90%;
+        height: auto;
+    }
+
+    /* Botones de appstore/playstore apilados verticalmente */
+    .contenedor-app {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    /* Botones adaptados */
+    .zona {
+        position: static;
+        width: 120px;
+        height: 40px;
     }
 }
+
+/* ────────── MEDIA QUERIES RESPONSIVE ────────── */
+
+/* TABLETS Y CELULAR MEDIANO */
+@media (max-width: 768px){
+
+    /* Ajusta márgenes generales */
+    .main-container{
+        margin: 10px;
+    }
+
+    /* Carousel más pequeño y adaptado */
+    .carousel-item img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* Texto más pequeño */
+    .description{
+        font-size: 1rem;
+    }
+
+    /* Cards ocupen todo el ancho y se centren */
+    .col .card{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    /* Imagen destacada adaptada */
+    .imagen-desc img{
+        width: 90%;
+        height: auto;
+    }
+
+    /* Botones de appstore/playstore apilados verticalmente */
+    .contenedor-app {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    /* Botones adaptados */
+    .zona {
+        position: static;
+        width: 120px;
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 480px){
+
+    .carousel-item img{
+        height: 180px;
+    }
+
+   
+    .description{
+        font-size: 0.9rem;
+    }
+
+    .info h2 {
+        font-size: 1.3rem;
+    }
+
+    
+    .main-container {
+        margin: 5px;
+    }
+}
+
+
 
