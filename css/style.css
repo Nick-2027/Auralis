@@ -1,3 +1,134 @@
-*{
+* {
     box-sizing: border-box;
 }
+
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    min-width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+
+.main-container {
+    margin: 0 70px;
+    margin-top: 10px;
+}
+
+.custom-carousel {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 100%;
+    height: auto;
+}
+
+.info{
+    margin-top: 15px;
+    color: rgb(14, 14, 145);
+}
+
+.description {
+    color: rgb(10, 10, 10);
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.card{
+    margin: 20px;
+    background-color: white;
+}
+
+.col .card{
+    width: 250px;
+    padding: 3px;
+    margin: 10px;
+   
+}
+
+.imagen-desc img{
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    display: block ;
+    margin: 0px auto;
+
+}
+
+.imagen-desc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    
+.contenedor-app{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+ 
+.contenedor-app img{
+    width: 100%;
+    max-width: 600px;
+}
+
+.zona{
+    position:static;
+}
+ 
+.appstore{
+    bottom:275px;
+    left: 160%;
+    right: 40%;
+    width: 120px;
+    height: 40px;
+}
+ 
+.playstore{
+    bottom: 276px;
+    right: 47%;
+    left: 200%;
+    width: 120px;
+    height: 40px;
+}
+
+@media (max-width: 768px){
+
+    .main-container{
+        margin: 10px;
+    }
+
+    .carousel-item img{
+        height: 250px;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+
+    .col .card{
+        width: 100%;
+        margin: 0;
+    }
+
+    .imagen-desc img{
+        width: 100%;
+    }
+}
+
