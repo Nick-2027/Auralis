@@ -1,3 +1,182 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    min-width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+
+.main-container {
+    margin: 0 70px;
+    margin-top: 10px;
+}
+
+.custom-carousel {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 100%;
+    height: auto;
+}
+
+.info{
+    margin-top: 15px;
+    color: rgb(14, 14, 145);
+}
+
+.description {
+    color: rgb(10, 10, 10);
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.card{
+    margin: 20px;
+    background-color: white;
+}
+
+.col .card{
+    width: 250px;
+    padding: 3px;
+    margin: 10px;
+   
+}
+
+.imagen-desc img{
+    width: 80%;
+    max-width: 900px;
+    height: auto;
+    display: block ;
+    margin: 0px auto;
+
+}
+
+.imagen-desc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+    
+.contenedor-app{
+    position: relative;
+    display: inline-block;
+}
+ 
+.contenedor-app img{
+    width: 100%;
+    max-width: 600px;
+}
+ 
+
+.zona{
+    position: absolute;
+    display: block;
+}
+ 
+
+.appstore{
+    bottom: 250px;
+    right: 40%;
+    left: 160%;
+    width: 130px;
+    height: 40px;
+}
+ 
+.playstore{
+    bottom: 257px;
+    right: 50%;
+    left: 200%;
+    width: 120px;
+    height: 40px;
+}
+
+
+@media (max-width: 768px){
+
+.main-container{
+    margin: 10px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+   
+.description{
+    font-size: 1rem;
+}
+
+    
+.col .card{
+    width: 100%;
+    margin: 5px 0;
+}
+
+.row {
+    justify-content: center;
+}
+
+    
+.imagen-desc img{
+    width: 90%;
+    height: auto;
+}
+
+    
+.contenedor-app {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+    
+ .zona {
+    position: static;
+        
+}
+}
+
+
+@media (max-width: 480px){
+
+ 
+.carousel-item img{
+    height: 180px;
+}
+
+   
+.description{
+    font-size: 0.9rem;
+}
+
+.info h2 {
+    font-size: 1.3rem;
+}
+
+.main-container {
+    margin: 5px;
+}
 }
